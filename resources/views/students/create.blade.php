@@ -4,7 +4,7 @@
 <div class="row">
     <div class="col-lg-12 margin-tb">
         <div>
-            <h2>Add New Student</h2>
+            <h2>Add New Mahasiswa</h2>
         </div>
         <div>
             <a class="btn btn-primary" href="{{ route('students.index') }}"> Back</a>
@@ -29,14 +29,26 @@
      <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
+                <strong>id:</strong>
+                <input class="form-control" name="id" placeholder="Id"></input>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-12">
+            <div class="form-group">
                 <strong>Name:</strong>
                 <input type="text" name="name" class="form-control" placeholder="Name">
             </div>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
-                <strong>Kelas:</strong>
-                <input class="form-control" name="kelas" placeholder="Kelas"></input>
+                <strong>Nim:</strong>
+                <input class="form-control" name="nim" placeholder="Nim"></input>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-12">
+            <div class="form-group">
+                <strong>Alamat:</strong>
+                <input class="form-control" name="alamat" placeholder="Alamat"></input>
             </div>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-12 text-center mt-3">

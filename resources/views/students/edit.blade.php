@@ -4,7 +4,7 @@
     <div class="row">
         <div class="col-lg-12 margin-tb">
             <div>
-                <h2>Edit student</h2>
+                <h2>Edit Data</h2>
             </div>
             <div>
                 <a class="btn btn-primary" href="{{ route('students.index') }}"> Back</a>
@@ -30,14 +30,26 @@
          <div class="row">
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
+                    <strong>Id:</strong>
+                    <input type="number" name="id" value="{{ $student->name }}" class="form-control" placeholder="ID">
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12">
+                <div class="form-group">
                     <strong>Name:</strong>
                     <input type="text" name="name" value="{{ $student->name }}" class="form-control" placeholder="Name">
                 </div>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
-                    <strong>Kelas:</strong>
-                    <input class="form-control" name="kelas" placeholder="Kelas" value="{{ $student->kelas }}">
+                    <strong>Nim:</strong>
+                    <input class="form-control" name="nim" placeholder="Nim" value="{{ $student->nim }}">
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12">
+                <div class="form-group">
+                    <strong>Alamat:</strong>
+                    <input type="text" name="alamat" value="{{ $student->alamat }}" class="form-control" placeholder="Alamat">
                 </div>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12 text-center mt-3">

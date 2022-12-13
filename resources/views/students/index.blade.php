@@ -20,16 +20,19 @@
    
     <table class="table table-bordered">
         <tr>
-            <th>No</th>
+            <th>Id</th>
             <th>Name</th>
-            <th>Kelas</th>
+            <th>Nim</th>
+            <th>Alamat</th>
             <th width="280px">Action</th>
         </tr>
         @foreach ($students as $student)
         <tr>
             <td>{{ ++$i }}</td>
+            <td>{{ $student->id }}</td>
             <td>{{ $student->name }}</td>
-            <td>{{ $student->kelas }}</td>
+            <td>{{ $student->nim }}</td>
+            <td>{{ $student->alamat }}</td>
             <td>
                 <form action="{{ route('students.destroy',$student->id) }}" method="POST">
    
